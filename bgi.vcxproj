@@ -63,10 +63,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="bgiout.cxx" />
-    <ClCompile Include="dda.cpp" />
+    <ClCompile Include="bresenham.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="dda.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="dibutil.cxx" />
     <ClCompile Include="drawing.cxx" />
     <ClCompile Include="file.cxx" />
+    <ClCompile Include="Midpoint.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="patterns.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="timepass.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -78,6 +89,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="text.cxx" />
+    <ClCompile Include="typesOfLines.cpp" />
     <ClCompile Include="winbgi.cxx" />
     <ClCompile Include="winthread.cxx" />
   </ItemGroup>
